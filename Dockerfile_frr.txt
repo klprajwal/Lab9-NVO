@@ -1,0 +1,13 @@
+# Use a base image with FRR installed
+FROM frrouting/frr:latest
+
+# Install any additional dependencies if needed
+# Example:
+# RUN apt-get update && apt-get install -y <package-name>
+
+# Expose ports if necessary
+# Example:
+# EXPOSE <port-number>
+
+# Start the FRR service when the container launches
+CMD ["frr", "-d"]
